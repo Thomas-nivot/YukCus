@@ -1,0 +1,293 @@
+/*Police de caractere*/
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+
+/*CSS global*/
+*{
+    
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+a, a:visited{
+    text-decoration: none; /* enleve le trait en dessous*/
+    color: white;
+    transition: all 1s;
+}
+
+a:hover{
+    color:rgb(62, 69, 76);
+
+}
+header button:hover{
+    color:rgb(62, 69, 76);
+    background-color:rgba(0,0,0,0.2) ;
+    transition: all 1s;
+}
+.container{ 
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;/*le conteneur ne prendra jamais plus de 100% de la largeur dispo*/
+}
+p{
+    line-height: 28px;
+}
+/* Classes utilitaires*/
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+
+/*Header*/
+
+header{
+    font-family: "Roboto";
+    color: white;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    background: no-repeat center/100% url(../images/imagedefond.jpg);
+    background-size: cover;
+    
+    /*responsiv*/
+}
+
+#h1menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+header li+li{
+    margin-left: 65px;
+}
+header div.right{
+    font-family: "Montserrat";
+}
+
+/* pour que le bouton soit a coté du menu*/
+header div.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header button{
+    font-weight: bold;
+    margin-left: 40px;
+    padding: 15px 30px 15px 30px;
+}
+
+li{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+
+
+header button{
+    color: white;
+    border-radius: 5px;
+    background: rgba(169,234,254,0.5);
+    border: none;
+}
+h1{
+    font-size: 37px;
+}
+div#center{
+    padding-top: 130px;
+}
+h2{
+    font-size: 48px;
+}
+
+
+#center{
+    text-align: center;
+}
+
+/*Milieu du site*/
+main{
+    font-family: "Roboto";
+    color:#acacac;
+}
+
+/*Formulaire*/
+main form{
+    width: 470px;
+    box-shadow: 0px 5px 10px grey;
+    border-radius: 5px;
+    position: relative;
+    top: -100px;
+    background-color: white;
+}
+#headerform{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 30px;
+}
+#mainform{
+    padding: 10px;
+}
+main form input{
+    border-radius: 0 5px 5px 0;
+    border: 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    border-color: gray;
+}
+main form #divimg{
+    height: 39px;
+    width: 55px;
+    border: 1px solid grey;
+    padding-top: 20px;
+    padding-bottom: 37px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+#ddate, #adate{
+    width: 140px;
+}
+main form button{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: coral;
+    position: absolute;
+    top: 530px; left: 340px;
+}
+
+form input[type="number"]{
+    width: 90px;
+}
+#passenger{
+    margin-bottom: 70px;
+}
+main div.right{
+    width: 630px;
+}
+main form input{
+    display: block;
+    margin-bottom: 10px;
+}
+main form label{
+    display:inline-block;
+    margin-bottom: 10px;
+}
+#formdateright{
+    float: right;
+}
+
+
+h3{
+    font-size: 36px;
+    margin-top: 80px;
+    margin-bottom: 75px;
+}
+.brbr{
+    display:block;
+    margin-bottom: 10px;
+}
+.w100{
+    width: 96%;
+}
+
+
+
+
+/*Les 3 images*/
+section div.flex{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+section div#un, div#deux, div#trois{
+    width: 300px;
+}
+
+/* centrer les images avec une autre possibilité:
+section img{
+    display:block;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 70px;
+}*/
+main section img{
+    margin-bottom: 70px;
+}
+section p, h4{
+    text-align: center;
+}
+h4{
+    font-size: 16px;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #3e454c;
+    color: #9c9c9c;
+    padding-top: 110px;
+    padding-bottom: 155px;
+    font-family: "Roboto";
+}
+footer div#p{
+    width: 295px;
+    height: 135px;
+    
+}
+
+
+#buttonformfooter{
+    background-color: orangered;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 23px;
+}
+#textformfooter{
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 23px 140px 23px 20px;
+    
+}
+footer ul{
+    justify-content: flex-end;
+}
+#rightfooter{
+    flex-direction: column;
+    
+}
+footer li+li{
+    margin-left: 10px;
+}
+footer img{
+    border-radius: 50%;
+}
